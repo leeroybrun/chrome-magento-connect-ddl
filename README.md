@@ -7,7 +7,7 @@ This way you can manually download the extensions and unzip them in your Magento
 
 ## Install
 
-You can install it from here : [Magento Connect Direct Download]().
+You can install it from here : [Magento Connect Direct Download](https://chrome.google.com/webstore/detail/magento-connect-direct-do/kapfjemcponojbmifjlamdhcdlceikol).
 
 ## Developers
 
