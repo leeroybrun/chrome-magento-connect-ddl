@@ -1,0 +1,11 @@
+{
+  "appDesc": {
+    "message":"Add direct download buttons to Magento Connect extension pages",
+    "description":"The description of the application, displayed in the web store."
+  },
+
+  "directDownload": {
+    "message": "Direct download",
+    "description": ""
+  }
+}

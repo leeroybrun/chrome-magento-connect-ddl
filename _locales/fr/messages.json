@@ -1,0 +1,11 @@
+{
+  "appDesc": {
+    "message":"Ajoute un bouton de téléchargement direct pour les extensions Magento Connect",
+    "description":"The description of the application, displayed in the web store."
+  },
+
+  "directDownload": {
+    "message": "Télécharger directement",
+    "description": ""
+  }
+}
