@@ -31,7 +31,7 @@ chrome.extension.sendMessage({}, function(response) {
 			});
 
 			if(latestDlUrl) {
-				jQuery('#product-view-offers-purchasing #button-purchase').append('<button type="button" class="ui-button ui-button-blue-huge" title="Direct download" style="display:block;width:100%;margin-top:10px;margin-left:4px;" onclick="window.open(\''+ latestDlUrl +'\', \'_blank\');">Direct download</button>');
+				jQuery('#product-view-offers-purchasing #button-purchase').append('<button type="button" class="ui-button ui-button-blue-huge" title="Direct download" style="display:block;width:250px;margin-top:10px;margin-left:4px;" onclick="window.open(\''+ latestDlUrl +'\', \'_blank\');">Direct download</button>');
 			}
 		}
 	}, 10);
