@@ -3,6 +3,8 @@ chrome.extension.sendMessage({}, function(response) {
 		if (document.readyState === "complete") {
 			clearInterval(readyStateCheckInterval);
 
+			var directDlMsg = chrome.i18n.getMessage('directDownload');
+
 			var latestDlUrl = false;
 
 			jQuery('#extension-version-list-container .extension-version').each(function() {
@@ -25,13 +27,13 @@ chrome.extension.sendMessage({}, function(response) {
 							latestDlUrl = dlUrl;
 						}
 
-						jQuery('.get-extension-button .button-purchase', this).append('<button type="button" class="ui-button ui-button-blue-huge" title="Direct download" onclick="window.open(\''+ dlUrl +'\', \'_blank\');">Direct download</button>');
+						jQuery('.get-extension-button .button-purchase', this).append('<button type="button" class="ui-button ui-button-blue-huge" title="'+ directDlMsg +'" onclick="window.open(\''+ dlUrl +'\', \'_blank\');">'+ directDlMsg +'</button>');
 					}
 				}				
 			});
 
 			if(latestDlUrl) {
-				jQuery('#product-view-offers-purchasing #button-purchase').append('<button type="button" class="ui-button ui-button-blue-huge" title="Direct download" style="display:block;width:250px;margin-top:10px;margin-left:4px;" onclick="window.open(\''+ latestDlUrl +'\', \'_blank\');">Direct download</button>');
+				jQuery('#product-view-offers-purchasing #button-purchase').append('<button type="button" class="ui-button ui-button-blue-huge" title="'+ directDlMsg +'" style="display:block;width:250px;margin-top:10px;margin-left:4px;" onclick="window.open(\''+ latestDlUrl +'\', \'_blank\');">'+ directDlMsg +'</button>');
 			}
 		}
 	}, 10);
