@@ -1,6 +1,6 @@
 {
   "name": "chrome-magento-connect-direct-dl",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "Leeroy Brun <leeroy.brun@gmail.com>",
   "private": true,
   "description": "Add direct download buttons to Magento Connect extension pages",
