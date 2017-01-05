@@ -33,7 +33,7 @@ chrome.extension.sendMessage({}, function(response) {
 			});
 
 			if(latestDlUrl) {
-				jQuery('#product-view-offers-purchasing #button-purchase').append('<button type="button" class="ui-button ui-button-blue-huge" title="'+ directDlMsg +'" style="display:block;width:250px;margin-top:10px;margin-left:4px;" onclick="window.open(\''+ latestDlUrl +'\', \'_blank\');">'+ directDlMsg +'</button>');
+				jQuery('#product-view-offers-purchasing #button-purchase').append('<a style="display:block;width:250px;margin-top:10px;margin-left:4px;box-sizing: border-box;" href="'+ latestDlUrl +'" target="_blank" class="ui-button ui-button-blue-huge" title="'+ directDlMsg +'">'+ directDlMsg +'</button>');
 			}
 		}
 	}, 10);
