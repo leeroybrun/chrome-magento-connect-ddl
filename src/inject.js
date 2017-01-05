@@ -27,7 +27,7 @@ chrome.extension.sendMessage({}, function(response) {
 							latestDlUrl = dlUrl;
 						}
 
-						jQuery('.get-extension-button .button-purchase', this).append('<a href="'+dlUrl+'" target="_blank"><button type="button" class="ui-button ui-button-blue-huge" title="'+ directDlMsg +'">'+ directDlMsg +'</button></a>');
+						jQuery('.get-extension-button .button-purchase', this).append('<a href="'+dlUrl+'" target="_blank" class="ui-button ui-button-blue-huge" title="'+ directDlMsg +'">'+ directDlMsg +'</a>');
 					}
 				}				
 			});
